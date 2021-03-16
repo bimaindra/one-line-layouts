@@ -1,0 +1,25 @@
+{
+  "name": "one-line-layouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "keywords": [
+    "gulp",
+    "js",
+    "css",
+    "atomic"
+  ],
+  "author": "bimaindra",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp-atomizer": "^3.0.7"
+  }
+}

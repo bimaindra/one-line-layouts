@@ -1,0 +1,17 @@
+.c-button {
+    padding: rem($size-base * 6) rem($size-base * 10);
+    border-radius: $size-base * 2;
+    transition: background-color .25s ease-out;
+
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+        border: 1px solid $color-primary;
+
+        &:hover,
+        &:active {
+            background-color: $color-white;
+            color: $color-primary;
+        }
+    }
+}

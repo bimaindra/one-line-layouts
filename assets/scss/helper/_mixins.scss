@@ -1,0 +1,11 @@
+@mixin box-shadow($val) {
+    -webkit-box-shadow: ($val);
+    -moz-box-shadow: ($val);
+    -ms-box-shadow: ($val);
+    -o-box-shadow: ($val);
+    box-shadow: ($val);
+}
+
+@function rem($px, $base: $size-base * 4) {
+    @return ($px / $base) * 1rem;
+}
