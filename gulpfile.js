@@ -59,17 +59,24 @@ gulp.task('scss', function () {
     .pipe(gulp.dest('./dist/assets/css'));
 });
 
+//--- MOVE IMAGE FILES
+gulp.task('image', () => {
+    return gulp
+      .src(['./assets/images/**/*.*'])
+      .pipe(gulp.dest('./dist/assets/images'));
+});
+
 //--- MOVE HTML FILES
 gulp.task('html', () => {
-    return gulp
-      .src(['./public/*.html'])
-      .pipe(gulp.dest('./dist'));
+  return gulp
+    .src(['./public/*.html'])
+    .pipe(gulp.dest('./dist'));
 });
 
 
 //--- SERVING FILES
-gulp.task('serve', gulp.series('acss', 'scss', 'html', 'browser-sync', () => {
-    gulp.watch(['./public/*.html', './assets/**/*.scss'], gulp.series('acss', 'scss', 'html', 'browser-reload'));
+gulp.task('serve', gulp.series('acss', 'scss', 'html', 'image', 'browser-sync', () => {
+    gulp.watch(['./public/*.html', './assets/**/*.scss'], gulp.series('acss', 'scss', 'html', 'image', 'browser-reload'));
   })
 );
 
