@@ -1,7 +1,10 @@
 .c-button {
-    padding: rem($size-base * 6) rem($size-base * 10);
+    font-weight: $font-base-semibold;
+    padding: rem($size-base * 5) rem($size-base * 8);
     border-radius: $size-base * 2;
     transition: background-color .25s ease-out;
+    text-decoration: none;
+    display: inline-block;
 
     &--primary {
         background-color: $color-primary;

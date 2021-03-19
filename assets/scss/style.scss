@@ -1,10 +1,13 @@
 @import './base/variable';
-@import './base/normalize';
-
 @import './helper/mixins';
+
+@import './base/modern-normalize.scss';
+@import './base/typography';
+
 @import './helper/utilities';
 
 @import './layout/main';
+@import './layout/grid';
 
 @import './component/button';
 @import './component/card';

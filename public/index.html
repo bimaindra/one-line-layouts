@@ -5,21 +5,56 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bima Indra | One Line Layout</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/atomic.css">
 </head>
 <body>
-	<main class="l-main-wrapper">
-		<section class="u-min-h-full u-bg-secondary l-center-content">
-			<div class="c-card">
-				<div class="c-card__head">
-					<div>Content head</div>
+	<main class="u-clearfix">
+		<section id="case1" class="Mih(100vh) u-bg-secondary l-center-content">
+			<!-- card -->
+			<div class="c-card W(300px) W(520px)--md P(24px) P(40px)--sm Bdrs(16px) Bgc(white) Bxsh(5px 10px #000)">
+				<!-- card-head -->
+				<div class="D(f) Ai(c) Jc(sb) Pt(0) Pb(2rem) Bdbw(t) Bdbc(#ccc) Bdbs(s)">
+					<div class="D(f) Ai(c) Mend21rem)">
+						<img src="/assets/images/profile.png" alt="Avatar" class="Bdrs(50%) W(60px) W(100px)--sm Mend(1rem)">
+						<div>
+							<h3 class="M(0)">Cecilia Patton</h3>
+							<span class="u-text-grey1 D(b)">@cecilia_patton</span>
+						</div>
+					</div>
+					<a href="#"><img src="/assets/images/pencil.svg" alt="Edit" class="W(20px)"></a>
 				</div>
-				<div class="c-card__body">
-					<div>Content body</div>
+				<!-- card-body -->
+				<div class="Pt(2rem) Pb(2rem)">
+					<div class="Mb(2rem)">
+						<span class="D(b) Fw(900) Fz(24px) M(0)">28 days summary</span>
+						<span class="u-text-grey1 D(b)">with change over previous period</span>
+					</div>
+					<div class="D(f)--sm Jc(sb) Mb(2rem)">
+						<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
+							<p class="Fz(14px) Fw(700) M(0) Mb(8px)">POSTS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(pink) Mstart(8px)">&darr; 11.1%</span></p>
+							<p class="M(0)">24</p>
+						</div>
+						<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
+							<p class="Fz(14px) Fw(700) M(0) Mb(8px)">IMPRESSIONS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(pink) Mstart(8px)">&darr; 11.1%</span></p>
+							<p class="M(0)">11.2K</p>
+						</div>
+					</div>
+					<div class="D(f)--sm Jc(sb) Mb(0)">
+						<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
+							<p class="Fz(14px) Fw(700) M(0) Mb(8px)">PROFILE VIEWS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(lightgreen) Mstart(8px)">&uarr; 11.1%</span></p>
+							<p class="M(0)">264</p>
+						</div>
+						<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
+							<p class="Fz(14px) Fw(700) M(0) Mb(8px)">FOLLOWERS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(pink) Mstart(8px)">&darr; 11.1%</span></p>
+							<p class="M(0)">1,005</p>
+						</div>
+					</div>
 				</div>
-				<div class="c-card__foot">
-					<button class="c-button c-button--primary">View more insights</button>
+				<!-- card-foot -->
+				<div class="Pt(2rem) Pb(0)">
+					<a href="case2" class="c-button c-button--primary">View more insights</a>
 				</div>
 			</div>
 		</section>
