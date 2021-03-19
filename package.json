@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": {},
+  "scripts": {
+    "serve": "gulp"
+  },
   "keywords": [
     "gulp",
     "js",
     "css",
-    "atomic"
+    "atomic",
+    "bem"
   ],
   "author": "bimaindra",
   "license": "ISC",
