@@ -2,3 +2,18 @@
     display: grid;
     place-items: center;
 }
+
+.l-pancake {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+        flex: 0 1 220px;
+        margin: 0 8px;
+    }
+
+    &__item--stretch {
+        flex: 1 1 220px;
+    }
+}
