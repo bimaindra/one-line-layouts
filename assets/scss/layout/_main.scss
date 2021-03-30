@@ -17,3 +17,14 @@
         flex: 1 1 220px;
     }
 }
+
+.l-pancake-stack {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.l-ram {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
