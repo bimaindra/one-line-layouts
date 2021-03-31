@@ -13,74 +13,26 @@
     }
 }
 
-.u-bg-primary {
-    background-color: $color-primary;
+@each $name, $color in $set-colors1 {
+    .u-bg-#{$name} {
+        background-color: $color;
+    }
 }
 
-.u-bg-secondary {
-    background-color: $color-secondary;
+@each $name, $color in $set-colors2 {
+    .u-bg-#{$name} {
+        background-color: rgba($color: $color, $alpha: 0.1);
+    }
 }
 
-.u-bg-grey1 {
-    background-color: $color-grey1;
+@each $name, $color in $set-colors1 {
+    .u-text-#{$name} {
+        color: $color;
+    }
 }
 
-.u-bg-grey2 {
-    background-color: $color-grey2;
-}
-
-.u-bg-grey3 {
-    background-color: $color-grey3;
-}
-
-.u-bg-tint1 {
-    background-color: $color-tint1;
-}
-
-.u-bg-tint2 {
-    background-color: $color-tint2;
-}
-
-.u-bg-white {
-    background-color: $color-white;
-}
-
-.u-bg-black {
-    background-color: $color-black;
-}
-
-.u-text-primary {
-    color: $color-primary;
-}
-
-.u-text-secondary {
-    color: $color-secondary;
-}
-
-.u-text-grey1 {
-    color: $color-grey1;
-}
-
-.u-text-grey2 {
-    color: $color-grey2;
-}
-
-.u-text-grey3 {
-    color: $color-grey3;
-}
-
-.u-text-tint1 {
-    color: $color-tint1;
-}
-
-.u-text-tint2 {
-    color: $color-tint2;
-}
-
-.u-text-white {
-    color: $color-white;
-}
-
-.u-text-black {
-    color: $color-black;
+@each $name, $color in $set-colors2 {
+    .u-text-#{$name} {
+        color: $color;
+    }
 }

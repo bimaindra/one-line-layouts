@@ -9,6 +9,33 @@ $color-tint2:           #7C7C7C;
 $color-white:           #FFFFFF;
 $color-black:           #000000;
 
+$color-dark:            #353b48;
+$color-red:             #e84118;
+$color-green:           #4cd137;
+$color-blue:            #00a8ff;
+$color-navy:            #273c75;
+$color-yellow:          #fbc531;
+$color-purple:          #9c88ff;
+
+$set-colors1: 
+    'primary' $color-primary,
+    'secondary' $color-secondary,
+    'grey1' $color-grey1,
+    'grey2' $color-grey2,
+    'grey3' $color-grey3,
+    'tint1' $color-tint1,
+    'tint2' $color-tint2,
+    'white' $color-white,
+    'black' $color-black;
+
+$set-colors2:
+    'dark' $color-dark,
+    'red' $color-red,
+    'green' $color-green,
+    'blue' $color-blue,
+    'navy' $color-navy,
+    'yellow' $color-yellow,
+    'purple' $color-purple;
 
 //-------------------- Font --------------------//
 $font-base:             'Nunito Sans', sans-serif;
