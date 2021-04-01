@@ -80,6 +80,9 @@ gulp.task('serve', gulp.series('acss', 'scss', 'html', 'image', 'browser-sync', 
   })
 );
 
+//-- COMPILE ASSETS
+gulp.task('compile', gulp.series('acss', 'scss', 'html', 'image'));
+
 
 //--- DEFAULT TASK
 gulp.task('default', gulp.series('serve'));

@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "serve": "gulp"
+    "serve": "gulp",
+    "build": "gulp compile"
   },
   "keywords": [
     "gulp",
