@@ -28,3 +28,15 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
+.l-ratio-16x9 {
+    aspect-ratio: 16 / 9;
+}
+
+.l-ratio-4x3 {
+    aspect-ratio: 4 / 3;
+}
+
+.l-ratio-1x1 {
+    aspect-ratio: 1 / 1;
+}

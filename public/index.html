@@ -14,7 +14,7 @@
 	<section id="case1" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-secondary">
 		<div class="Mb(1rem) Mb(1.25rem)--md D(f) Jc(c) Ai(c) Fld(c)">
 			<h1 class="Ta(c) Mt(8px) Mb(8px)">Super Centered layout</h1>
-			<p class="Mt(0) Mb(8px)">This feature is centering the layout using Grid.</p>
+			<p class="Mt(8px) Mb(12px) Maw(400px)--sm Maw(768px)--md Ta(c)">This feature is to make the content centered using CSS property <strong><em>grid</em></strong> also <strong><em>place-items: center</em></strong>. <br> It's gonna make the content has center position vertical and horizontal.</p>
 			<a href="#case1-child" class="D(ib) Ta(c)">Check it out!</a>
 		</div>
 		<main id="case1-child" class="l-center-content Mih(100vh)">
@@ -70,6 +70,7 @@
 	<section id="case2" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-yellow">
 		<div class="Mb(1rem) Mb(1.25rem)--md D(f) Jc(c) Ai(c) Fld(c)">
 			<h1 class="Ta(c) Mt(8px) Mb(8px)">The Deconstructed Pancake layout</h1>
+			<p class="Mt(8px) Mb(12px) Maw(400px)--sm Maw(768px)--md Ta(c)">This feature is to make the content has fixed width, stacked when on the mobile screen, also spanning into the same line. <br>To make that, just use simple CSS property <strong><em>flex</em></strong> also <strong><em>flex: 0 1 < baseWidth ></em></strong>. <br> Shrink the browser to have a look the effect.</p>
 			<a href="#case2-child" class="D(ib) Ta(c)">Check it out!</a>
 		</div>
 		<main id="case2-child" class="Mih(100vh) l-center-content">
@@ -107,13 +108,14 @@
 	</section>
 
 	<!-- CASE 3 -->
-	<section id="case3" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-red">
+	<section id="case3" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(0) Pos(r) u-bg-red">
 		<div class="Mb(1rem) Mb(1.25rem)--md D(f) Jc(c) Ai(c) Fld(c)">
 			<h1 class="Ta(c) Mt(8px) Mb(8px)">Pancake Stack layout</h1>
+			<p class="Mt(8px) Mb(12px) Maw(400px)--sm Maw(768px)--md Ta(c)">This feature is to make the content has same dimension. <br> To make that, just use simple CSS property <strong><em>grid</em></strong> also <strong><em>grid-template-rows: auto 1fr auto</em></strong>. <br> It's good when we have website but our website doesn't has any content to be shown in one full screen.</p>
 			<a href="#case3-child" class="D(ib) Ta(c)">Check it out!</a>
 		</div>
 		<main id="case3-child" class="Mih(100vh) l-pancake-stack">
-			<header class="D(f) Pt(2rem) Pb(2rem)">Header</header>
+			<header class="D(f) Pt(1.25rem) Pb(1.25rem) Pstart(1rem) Pend(1rem) u-bg-blue Mstart(-1rem) Mend(-1rem) Mb(1.5rem)"><strong class="Tt(u)">Header</strong></header>
 			<div>
 				<!-- card -->
 				<div class="c-card W(100%) W(375px)--sm W(520px)--md P(24px) P(40px)--sm Bdrs(16px) Bgc(white) Bxsh(5px 10px #000) Mstart(a) Mend(a)">
@@ -134,16 +136,6 @@
 							<span class="D(b) Fw(900) Fz(24px) M(0)">28 days summary</span>
 							<span class="u-text-grey1 D(b)">with change over previous period</span>
 						</div>
-						<!-- <div class="D(f)--sm Jc(sb) Mb(2rem)">
-							<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
-								<p class="Fz(14px) Fw(700) M(0) Mb(8px)">POSTS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(pink) Mstart(8px)">&darr; 11.1%</span></p>
-								<p class="M(0)">24</p>
-							</div>
-							<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
-								<p class="Fz(14px) Fw(700) M(0) Mb(8px)">IMPRESSIONS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(pink) Mstart(8px)">&darr; 11.1%</span></p>
-								<p class="M(0)">11.2K</p>
-							</div>
-						</div> -->
 						<div class="D(f)--sm Jc(sb) Mb(0)">
 							<div class="W(12/12) W(6/12)--sm Mb(12px) Mb(0)--sm">
 								<p class="Fz(14px) Fw(700) M(0) Mb(8px)">PROFILE VIEWS<span class="Pt(4px) Pb(4px) Pstart(8px) Pend(8px) Bdrs(1rem) Bgc(lightgreen) Mstart(8px)">&uarr; 11.1%</span></p>
@@ -156,12 +148,12 @@
 						</div>
 					</div>
 					<!-- card-foot -->
-					<div class="Pt(2rem) Pb(0)">
+					<!-- <div class="Pt(2rem) Pb(0)">
 						<a href="#case4" class="c-button c-button--primary">View more insights</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
-			<footer class="D(f) Pt(2rem) Pb(2rem)">Footer</footer>
+			<footer class="D(f) Pt(1.25rem) Pb(1.25rem) Pstart(1rem) Pend(1rem) u-bg-blue Mstart(-1rem) Mend(-1rem)"><strong class="Tt(u)">Footer</strong></footer>
 		</main>
 	</section>
 
@@ -169,9 +161,9 @@
 	<section id="case4" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-green">
 		<div class="Mb(1rem) Mb(1.25rem)--md D(f) Jc(c) Ai(c) Fld(c)">
 			<h1 class="Ta(c) Mt(8px) Mb(8px)">RAM (Repeat, Auto, Minmax) layout</h1>
-			<a href="#case3-child" class="D(ib) Ta(c)">Check it out!</a>
+			<a href="#case4-child" class="D(ib) Ta(c)">Check it out!</a>
 		</div>
-		<main class="Mih(100vh) l-center-content">
+		<main id="case4-child" class="Mih(100vh) l-center-content">
 			<!-- card -->
 			<div class="c-card W(100%) W(800px)--md P(24px) P(40px)--md Bdrs(16px) Bgc(white) Bxsh(5px 10px #000)">
 				<!-- card-head -->
@@ -199,7 +191,7 @@
 				</div>
 				<!-- card-foot -->
 				<div class="Pt(2rem) Pb(0)">
-					<a href="#case3" class="c-button c-button--primary">Keep sharing</a>
+					<a href="#case5" class="c-button c-button--primary">Keep sharing</a>
 				</div>
 			</div>
 		</main>
@@ -208,20 +200,36 @@
 	<!-- CASE 5 -->
 	<section id="case5" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-blue">
 		<div class="Mb(1rem) Mb(1.25rem)--md D(f) Jc(c) Ai(c) Fld(c)">
-			<h1 class="Ta(c) Mt(8px) Mb(8px)">Clamping My Style layout</h1>
+			<h1 class="Ta(c) Mt(8px) Mb(8px)">Respect for Aspect layout</h1>
+			<p class="Mt(8px) Mb(12px) Maw(400px)--sm Maw(768px)--md Ta(c)">This feature is maintain ratio of content using CSS property <strong><em>aspect-ratio</em></strong>. <br> Shrink the browser to have a look the effect.</p>
 			<a href="#case5-child" class="D(ib) Ta(c)">Check it out!</a>
 		</div>
-		<main id="case5-child" class="Mih(100vh) l-center-content"></main>
+		<main id="case5-child" class="Mih(100vh) l-center-content">
+			<!-- card -->
+			<div class="c-card W(100%) W(375px)--sm W(420px)--md P(24px) P(40px)--sm Bdrs(16px) Bgc(white) Bxsh(5px 10px #000)">
+				<!-- card-head -->
+				<div class="D(f) Ai(c) Jc(sb) Pt(0) Pb(2rem) Bdbw(t) Bdbc(#ccc) Bdbs(s) D(f) Fld(c)">
+					<img src="https://images.unsplash.com/photo-1548019581-99d71784d09a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2728&q=80" alt="Avatar" class="l-ratio-16x9 W(100%) u-fit-cover Bdrs(8px)">
+				</div>
+				<!-- card-body -->
+				<div class="Pt(1rem) Pb(1rem)">
+					<p class="M(0)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, molestias earum. Enim, ea tempore repellat blanditiis velit non, ut, laboriosam omnis accusantium assumenda aperiam odit nesciunt ipsa inventore sit facilis!</p>
+				</div>
+				<!-- card-foot -->
+				<div class="Pt(1rem) Pb(0)">
+					<a href="#case6" class="c-button c-button--primary">View more insights</a>
+				</div>
+			</div>
+		</main>
 	</section>
 
 	<!-- CASE 6 -->
-	<section id="case6" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-navy">
+	<!-- <section id="case6" class="Pstart(1rem) Pend(1rem) Pt(2rem) Pb(2rem) Pos(r) u-bg-navy">
 		<div class="Mb(1rem) Mb(1.25rem)--md D(f) Jc(c) Ai(c) Fld(c)">
-			<h1 class="Ta(c) Mt(8px) Mb(8px)">Respect for Aspect layout</h1>
+			<h1 class="Ta(c) Mt(8px) Mb(8px)">Clamping My Style layout</h1>
 			<a href="#case6-child" class="D(ib) Ta(c)">Check it out!</a>
 		</div>
 		<main id="case6-child" class="Mih(100vh) l-center-content"></main>
-	</section>
-
+	</section> -->
 </body>
 </html>
