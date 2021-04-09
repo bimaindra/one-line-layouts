@@ -14,10 +14,12 @@ Here's some design reference to create some layouts :
 ### Tech Stack
 Here's some of tech-stack that used in development process :
 
-1. [Gulp](https://gulpjs.com/) | A toolkit to automate & enhance your workflow. Using it as task runner.
-2. [Atomic-CSS](https://acss.io/) |  
-3. [SASS](https://sass-lang.com/) | CSS-preproceccor. Using it to tackle undefined CSS-property in Atomizer such as ***grid***, ***aspect-ratio***, etc.
-4. [Vercel](https://vercel.com/) | Serverless hosting for host websites and web services that deploy instantly and scale automatically – all without any configuration.
+List | Description
+------------ | -------------
+[Gulp](https://gulpjs.com/) | A toolkit to automate & enhance your workflow. Using it as task runner.
+[Atomic-CSS](https://acss.io/) | Utility first CSS like inline styles, offers single-purpose units of style, but applied via classes.
+[SASS](https://sass-lang.com/) | CSS-preproceccor. Using it to tackle undefined CSS-property in Atomizer such as ***grid***, ***aspect-ratio***, etc.
+[Vercel](https://vercel.com/) | Serverless hosting for host websites and web services that deploy instantly and scale automatically – all without any configuration.
 
 ## Usage
 Clone this repository.
