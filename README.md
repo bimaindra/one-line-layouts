@@ -21,6 +21,18 @@ List | Description
 [SASS](https://sass-lang.com/) | CSS-preproceccor. Using it to tackle undefined CSS-property in Atomizer such as ***grid***, ***aspect-ratio***, etc.
 [Vercel](https://vercel.com/) | Serverless hosting for host websites and web services that deploy instantly and scale automatically – all without any configuration.
 
+### Cases
+1. Super Centered layout
+    This feature is to make the content centered using CSS property ***grid*** also ***place-items: center***.
+2. The Deconstructed Pancake layout
+    This feature is to make the content has fixed width, stacked when on the mobile screen, also spanning into the same line.
+3. Pancake Stack Pancake layout
+    This feature is to make the content has same dimension.
+4. RAM (Repeat, Auto, Minmax) Pancake layout
+    description...
+5. Respect for Aspect layout
+    This feature is maintain ratio of content using CSS property ***aspect-ratio***.
+
 ## Usage
 Clone this repository.
 
