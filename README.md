@@ -5,6 +5,7 @@
 To be update...
 
 ### Design Reference
+Getting the design from UI Design Daily.
 UI Design Daily is free, Open-source UI design resources updated daily.
 Here's some design reference to create some layouts :
 
