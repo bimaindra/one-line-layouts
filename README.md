@@ -1,5 +1,5 @@
 # one-line-layouts
-> This repository highlights a few powerful lines of CSS that do some serious heavy lifting and help you build robust modern layouts.
+> A highlights a few powerful lines of CSS that do some serious heavy lifting and help you build robust modern layouts.
 
 ## Intro
 To be update...
@@ -9,10 +9,13 @@ Getting the design from UI Design Daily.
 UI Design Daily is free, Open-source UI design resources updated daily.
 Here's some design reference to create some layouts :
 
-1. [Design 1](https://www.uidesigndaily.com/posts/sketch-stats-card-analytics-day-1266)
-    ![Sample design-1](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-1.png?raw=false)
-2. [Design 2](https://www.uidesigndaily.com/posts/sketch-stats-statistics-gradient-card-day-1301)
-    ![Sample design-2](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-2.png?raw=false)
+1. [Design 1 reference](https://www.uidesigndaily.com/posts/sketch-stats-card-analytics-day-1266)
+
+    <img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-1.png?raw=false" width="600">
+
+2. [Design 2 reference](https://www.uidesigndaily.com/posts/sketch-stats-statistics-gradient-card-day-1301)
+
+    <img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-2.png?raw=false" width="600">
 
 ### Tech Stack
 Here's some of tech-stack that used in development process :
@@ -25,10 +28,10 @@ Here's some of tech-stack that used in development process :
 | [Vercel](https://vercel.com/) | Serverless hosting for host websites and web services that deploy instantly and scale automatically – all without any configuration. |
 
 ### Cases
-Here's some cases that i choosed based on glitch
+Here's some cases that i choosed based on [glitch](https://1linelayouts.glitch.me/)
 
 #### 1. Super Centered layout
-This feature is to make the content centered using CSS property ***grid*** also ***place-items: center***.
+This feature is to make the content has vertical & horizontal centered using CSS property ***grid*** also ***place-items: center***.
 
 #### 2. The Deconstructed Pancake layout
 This feature is to make the content has fixed width, stacked when on the mobile screen, also spanning into the same line.
