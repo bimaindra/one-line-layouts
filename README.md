@@ -10,9 +10,9 @@ UI Design Daily is free, Open-source UI design resources updated daily.
 Here's some design reference to create some layouts :
 
 1. [Design 1](https://www.uidesigndaily.com/posts/sketch-stats-card-analytics-day-1266)
-    ![Sample design-1](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/design-1.png?raw=true)
+    ![Sample design-1](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-1.png?raw=false)
 2. [Design 2](https://www.uidesigndaily.com/posts/sketch-stats-statistics-gradient-card-day-1301)
-    ![Sample design-2](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/design-2.png?raw=true)
+    ![Sample design-2](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-2.png?raw=false)
 
 ### Tech Stack
 Here's some of tech-stack that used in development process :
