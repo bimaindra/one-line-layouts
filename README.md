@@ -10,7 +10,9 @@ UI Design Daily is free, Open-source UI design resources updated daily.
 Here's some design reference to create some layouts :
 
 1. [Design 1](https://www.uidesigndaily.com/posts/sketch-stats-card-analytics-day-1266)
+    ![Sample design-1](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/design-1.png?raw=true)
 2. [Design 2](https://www.uidesigndaily.com/posts/sketch-stats-statistics-gradient-card-day-1301)
+    ![Sample design-2](https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/design-2.png?raw=true)
 
 ### Tech Stack
 Here's some of tech-stack that used in development process :
@@ -40,15 +42,15 @@ description...
 #### 5. Respect for Aspect layout
 This feature is maintain ratio of content using CSS property ***aspect-ratio***.
 
-## Usage
+## Get started
 Clone this repository.
 
-Enter directory of project then install depedency.
+Enter directory of project
 ```shell
 cd one-line-layouts
 ```
 
-then
+...then install dependency
 ```shell
 npm install
 ```
@@ -56,6 +58,10 @@ npm install
 Run local development
 ```shell
 npm run serve
+```
+or
+```shell
+npm run start
 ```
 
 Build for `development` env
