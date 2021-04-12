@@ -33,17 +33,27 @@ Here's some cases that i choosed based on [glitch](https://1linelayouts.glitch.m
 #### 1. Super Centered layout
 This feature is to make the content has vertical & horizontal centered using CSS property ***grid*** also ***place-items: center***.
 
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-1.gif?raw=false" width="600">
+
 #### 2. The Deconstructed Pancake layout
 This feature is to make the content has fixed width, stacked when on the mobile screen, also spanning into the same line.
+
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-2.gif?raw=false" width="600">
 
 #### 3. Pancake Stack Pancake layout
 This feature is to make the content has same dimension.
 
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-3.png?raw=false" width="600">
+
 #### 4. RAM (Repeat, Auto, Minmax) Pancake layout
 description...
 
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-4.gif?raw=false" width="600">
+
 #### 5. Respect for Aspect layout
 This feature is maintain ratio of content using CSS property ***aspect-ratio***.
+
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-5.gif?raw=false" width="600">
 
 ## Get started
 Clone this repository.
