@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "serve": "NODE_ENV='development' gulp",
+    "start": "NODE_ENV='development' gulp",
     "build": "NODE_ENV='production' gulp"
   },
   "keywords": [
