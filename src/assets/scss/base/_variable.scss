@@ -1,0 +1,69 @@
+//-------------------- Base Colors --------------------//
+$color-primary:         #202328;
+$color-secondary:       #EBEBFA;
+$color-grey1:           #979AA1;
+$color-grey2:           #7C7C7C;
+$color-grey3:           #EDEDF4;
+$color-tint1:           #979AA1;
+$color-tint2:           #7C7C7C;
+$color-white:           #FFFFFF;
+$color-black:           #000000;
+
+$color-dark:            #353b48;
+$color-red:             #e84118;
+$color-green:           #4cd137;
+$color-blue:            #00a8ff;
+$color-navy:            #273c75;
+$color-yellow:          #fbc531;
+$color-purple:          #9c88ff;
+
+$set-colors1: 
+    'primary' $color-primary,
+    'secondary' $color-secondary,
+    'grey1' $color-grey1,
+    'grey2' $color-grey2,
+    'grey3' $color-grey3,
+    'tint1' $color-tint1,
+    'tint2' $color-tint2,
+    'white' $color-white,
+    'black' $color-black;
+
+$set-colors2:
+    'dark' $color-dark,
+    'red' $color-red,
+    'green' $color-green,
+    'blue' $color-blue,
+    'navy' $color-navy,
+    'yellow' $color-yellow,
+    'purple' $color-purple;
+
+//-------------------- Font --------------------//
+$font-base:             'Nunito Sans', sans-serif;
+$font-alt:              'Roboto', sans-serif;
+
+$font-base-light:       300;
+$font-base-regular:     400;
+$font-base-semibold:    600;
+$font-base-bold:        700;
+$font-base-black:       900;
+
+$font-alt-light:        300;
+$font-alt-regular:      400;
+$font-alt-medium:       500;
+$font-alt-bold:         700;
+$font-alt-black:        900;
+
+$font-content:          $font-base-regular;
+$font-heading:          $font-base-black;
+
+
+//-------------------- Base Size --------------------//
+$size-base:             4px;
+
+
+//-------------------- Borders --------------------//
+$radius-base:           1rem;
+
+//-------------------- Line Height --------------------//
+$line-height-base:      1.5;
+$line-height-content:   1.8;

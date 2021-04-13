@@ -1,0 +1,15 @@
+body {
+    font-family: $font-base;
+    font-weight: $font-base-regular;
+    font-size: rem($size-base * 4);
+    line-height: $line-height-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-heading;
+}

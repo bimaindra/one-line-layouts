@@ -1,0 +1,42 @@
+.u-min-h-full {
+    min-height: 100vh;
+}
+
+.u-clearfix {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.u-fit-cover {
+    object-fit: cover;
+}
+
+@each $name, $color in $set-colors1 {
+    .u-bg-#{$name} {
+        background-color: $color;
+    }
+}
+
+@each $name, $color in $set-colors2 {
+    .u-bg-#{$name} {
+        background-color: rgba($color: $color, $alpha: 0.075);
+    }
+}
+
+@each $name, $color in $set-colors1 {
+    .u-text-#{$name} {
+        color: $color;
+    }
+}
+
+@each $name, $color in $set-colors2 {
+    .u-text-#{$name} {
+        color: $color;
+    }
+}
