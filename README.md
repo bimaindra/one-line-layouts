@@ -13,11 +13,11 @@ Here's some design reference to create some layouts :
 
 1. [Design 1 reference](https://www.uidesigndaily.com/posts/sketch-stats-card-analytics-day-1266)
 
-    <img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-1.png?raw=false" width="600">
+    <img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/design-1.png?raw=false" width="600">
 
 2. [Design 2 reference](https://www.uidesigndaily.com/posts/sketch-stats-statistics-gradient-card-day-1301)
 
-    <img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/design-2.png?raw=false" width="600">
+    <img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/design-2.png?raw=false" width="600">
 
 ### Tech Stack
 Here's some of tech-stack that used in development process :
@@ -45,7 +45,7 @@ Here's the shortcode
 }
 ```
 
-<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-1.gif?raw=false" width="600">
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/example-1.gif?raw=false" width="600">
 
 #### 2. The Deconstructed Pancake layout
 This feature is to make the content has fixed width, stacked when on the mobile screen, also spanning into the same line.
@@ -68,7 +68,7 @@ Here's the shortcode
 }
 ```
 
-<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-2.gif?raw=false" width="600">
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/example-2.gif?raw=false" width="600">
 
 #### 3. Pancake Stack Pancake layout
 This feature is to make the content has same dimension.
@@ -83,7 +83,7 @@ Here's the shortcode
 }
 ```
 
-<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-3.png?raw=false" width="600">
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/example-3.png?raw=false" width="600">
 
 #### 4. RAM (Repeat, Auto, Minmax) Pancake layout
 
@@ -96,7 +96,7 @@ Here's the shortcode
 }
 ```
 
-<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-4.gif?raw=false" width="600">
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/example-4.gif?raw=false" width="600">
 
 #### 5. Respect for Aspect layout
 This feature is maintain ratio of content using CSS property ***aspect-ratio***. 
@@ -110,7 +110,7 @@ Here's the shortcode
 }
 ```
 
-<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/assets/images/example-5.gif?raw=false" width="600">
+<img src="https://github.com/wongdarjo/one-line-layouts/blob/feature/v1/src/assets/images/example-5.gif?raw=false" width="600">
 
 ## Get started
 Clone this repository.
