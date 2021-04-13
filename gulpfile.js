@@ -134,7 +134,7 @@ gulp.task('html', () => {
 //-- WATCH FILES
 gulp.task('watch-files', () => {
   gulp.watch(`${dir.source.scss}/**/*.scss`, gulp.series(gulp.parallel('scss'), 'browser-reload'));
-  gulp.watch(`${dir.source.public}/pages/*.html`, gulp.series(gulp.parallel('acss', 'copy-html'), 'browser-reload'));
+  gulp.watch(`${dir.source.public}/**/*.html`, gulp.series(gulp.parallel('acss', 'html'), 'browser-reload'));
   console.log('\t' + logSymbols.info,'Watching for changes...');
 });
 
