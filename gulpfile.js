@@ -1,14 +1,28 @@
+/**
+*   Gulp StarterKit    
+*   Author : bimaindra                                          
+*   URL : bimaindra.com                                          
+**/
+
+
+//--- GENERAL
 const gulp = require('gulp');
-const atomizer = require('gulp-atomizer');
-const sass = require('gulp-sass');
-const cssMinify = require('gulp-css-minify');
 const sourcemaps = require('gulp-sourcemaps');
 const noop = require('gulp-noop');
 const del = require('del');
 const logSymbols = require('log-symbols');
 const browserSync = require('browser-sync').create();
 
-//-- ENV
+
+//--- CSS
+const atomizer = require('gulp-atomizer');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+
+
+//--- ENV
 let isDebug = ((process.env.NODE_ENV || 'development').trim().toLowerCase() !== 'production');
 
 
@@ -22,19 +36,19 @@ const root = {
 
 const dir = {
   source: {
-      public: `${root.src}/public`,
-      css: `${root.assets}/css`,
-      scss: `${root.assets}/scss`,
-      js: `${root.assets}/js`,
-      images: `${root.assets}/images`,
-      fonts: `${root.assets}/fonts`,
+    public: `${root.src}/public`,
+    css: `${root.assets}/css`,
+    scss: `${root.assets}/scss`,
+    js: `${root.assets}/js`,
+    images: `${root.assets}/images`,
+    fonts: `${root.assets}/fonts`,
   },
   build: {
-      base: `${root.build}`,
-      css: `${root.build}/assets/css`,
-      js: `${root.build}/assets/js`,
-      images: `${root.build}/assets/images`,
-      fonts: `${root.build}/assets/fonts`,
+    base: `${root.build}`,
+    css: `${root.build}/assets/css`,
+    js: `${root.build}/assets/js`,
+    images: `${root.build}/assets/images`,
+    fonts: `${root.build}/assets/fonts`,
   },
 };
 
@@ -57,14 +71,14 @@ gulp.task('browser-reload', (done) => {
 });
 
 
-//-- CLEANUP BUILD FOLDER
+//--- CLEANUP BUILD FOLDER
 gulp.task('clean', () => {
   console.log(logSymbols.info,'Clean up build folder...');
   return del([root.build])
 });
 
 
-//-- FINISH COMPILE MESSAGES
+//--- FINISH COMPILE MESSAGES
 gulp.task('compile-done', (done) => {
   console.log(logSymbols.success,'All is compiled!');
   done()
@@ -97,21 +111,55 @@ gulp.task('acss', () => {
       })
     )
     .pipe(!isDebug ? noop() : sourcemaps.init())
-    .pipe(isDebug ? noop() : cssMinify())
+    .pipe(autoprefixer({
+      overrideBrowserslist: [
+        'defaults',
+        '> 5%',
+        'last 2 versions',
+        'not IE 11',
+        'not IE_Mob 11',
+        'maintained node versions'
+      ]
+    }))
+    .pipe(isDebug ?
+      noop() 
+      :
+      cleanCSS({debug: true, compatibility: 'ie8'}, (details) => {
+        console.log(logSymbols.info, `Original size of ${details.name}: ${details.stats.originalSize} bytes`);
+        console.log(logSymbols.success, `Compressed size of ${details.name}: ${details.stats.minifiedSize} bytes`);
+      })
+    )
+    // .pipe(isDebug ? noop() : cssMinify())
     .pipe(!isDebug ? noop() : sourcemaps.write('./maps'))
     .pipe(gulp.dest(dir.build.css));
 });
 
 
 //--- COMPILE SASS
-sass.compiler = require('node-sass');
-
 gulp.task('scss', function () {
   return gulp
     .src(`${dir.source.scss}/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(!isDebug ? noop() : sourcemaps.init())
-    .pipe(isDebug ? noop() : cssMinify())
+    .pipe(autoprefixer({
+      overrideBrowserslist: [
+        'defaults',
+        '> 5%',
+        'last 2 versions',
+        'not IE 11',
+        'not IE_Mob 11',
+        'maintained node versions'
+      ]
+    }))
+    .pipe(isDebug ? 
+      noop() 
+      :
+      cleanCSS({debug: true, compatibility: 'ie8'}, (details) => {
+        console.log(logSymbols.info, `Original size of ${details.name}: ${details.stats.originalSize} bytes`);
+        console.log(logSymbols.success, `Compressed size of ${details.name}: ${details.stats.minifiedSize} bytes`);
+      })
+    )
+    // .pipe(isDebug ? noop() : cssMinify())
     .pipe(!isDebug ? noop() : sourcemaps.write('./maps'))
     .pipe(gulp.dest(dir.build.css));
 });
@@ -131,7 +179,7 @@ gulp.task('html', () => {
 });
 
 
-//-- WATCH FILES
+//--- WATCH FILES
 gulp.task('watch-files', () => {
   gulp.watch(`${dir.source.scss}/**/*.scss`, gulp.series(gulp.parallel('scss'), 'browser-reload'));
   gulp.watch(`${dir.source.public}/**/*.html`, gulp.series(gulp.parallel('acss', 'html'), 'browser-reload'));
@@ -139,7 +187,7 @@ gulp.task('watch-files', () => {
 });
 
 
-//-- COMPILE FILES
+//--- COMPILE FILES
 gulp.task('compile', gulp.series('clean', gulp.parallel('acss', 'scss', 'html', 'image')));
 
 
